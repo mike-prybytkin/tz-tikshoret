@@ -1,0 +1,142 @@
+/* Константы */
+$null-auto: 0 auto;
+$defaultFlex: 0 0 100%;
+$p100: 100%;
+
+/* Переменные */
+$orderFormBG: #003667;
+$orderFormBodyBorder: 1px solid #dee2e6;
+$orderFormBodyContentH1Color: #103f68;
+$orderFormBodyContentPriceColor: #103f68;
+$orderFormBodyContentOldPriceColor: #343a40;
+$orderFormBodyFieldsBG: #ce333b;
+
+
+/* Настраиваемые стили */
+.order-form {
+  background-color: $orderFormBG;
+}
+
+.order-form__header img {
+  max-width: 95%;
+  margin: $null-auto;
+}
+
+.order-form__body {
+  border: $orderFormBodyBorder;
+  padding: 0.5rem;
+  background-color: lightgrey;
+}
+
+.order-form__body_content h1 {
+  color: $orderFormBodyContentH1Color;
+  font-weight: 700;
+  font-size: 2.5rem !important;
+  width: 90%;
+  margin: $null-auto;
+}
+
+.order-form__body_content img, h1,
+.order-form__body_content_remark {
+  margin-bottom: 1rem !important;
+}
+
+.order-form__body_content_price {
+  color: $orderFormBodyContentPriceColor;
+  font-size: 2.5rem !important;
+}
+
+.order-form__body_content_old_price {
+  color: $orderFormBodyContentOldPriceColor;
+  font-size: 1.5rem !important;
+}
+
+.order-form__body_fields form button {
+  background-color: $orderFormBodyFieldsBG;
+  font-size: 1.4rem !important;
+  font-weight: 700;
+  line-height: .8!important;
+}
+
+.order-form__body_fields form button:hover {
+  color: white;
+}
+
+.order-form__body_fields form img {
+  margin-right: 1rem;
+  width: 4.7rem;
+}
+
+.order-form__body_fields_btn_text {
+  margin-left: 1rem;
+}
+
+.order-form__body_fields_btn_text span.text-lowercase {
+  font-size: 1rem !important;
+}
+
+.order-form__bottom_remark {
+  color: white;
+  text-align: center !important;
+  padding-top: 1.5rem !important;
+  font-size: 2rem !important;
+}
+
+
+/* Не трубеющие настроек стили */
+.order-form__body_content{-ms-flex: $defaultFlex;flex: $defaultFlex;max-width: $p100;text-align: center;}
+.order-form__body_content_remark{max-width: 90%; margin: $null-auto;}
+.order-form__body_fields{width: $p100;display: -ms-flexbox;display: flex;-ms-flex-wrap: wrap;flex-wrap: wrap;margin-right: -15px;margin-left: -15px;}
+.order-form__body_fields form {width: 90%;margin: $null-auto;}
+.order-form__body_fields form input,button{width: $p100;}
+.order-form__body_fields form button{height: calc(1.5em*2 + 0.5rem + 2px);display: flex;align-items: center;flex-wrap: wrap;justify-content: center;color: white;margin-bottom: 1.5rem;}
+.order-form__body_fields_btn_text span.text-uppercase{vertical-align: middle !important;}
+
+
+/* Адаптация по ширине экрана от 230px */
+@media all and (max-width: 767px) {
+  .order-form__body_content_price {font-size: 2.4rem !important;}
+  .order-form__body_content_old_price {font-size: 1.4rem !important;}
+  .order-form__body_content_remark {font-size: .9rem;}
+}
+
+@media all and (max-width: 550px) {
+  .order-form__body_content_price {font-size: 2.4rem !important;}
+  .order-form__body_content_old_price {font-size: 1.4rem !important;}
+  .order-form__body_content_remark {font-size: .9rem;}
+  .order-form__body_content h1 {font-size: 2.4rem !important;}
+  .order-form__bottom_remark {font-size: 1.8rem !important;}
+}
+
+@media all and (max-width: 400px) {
+  .order-form__body_content_price {font-size: 2.2rem !important;}
+  .order-form__body_content_old_price {font-size: 1.2rem !important;}
+  .order-form__body_content_remark {font-size: .75rem;}
+  .order-form__body_content h1 {font-size: 2.2rem !important;}
+  .order-form__bottom_remark {font-size: 1.35rem !important;}
+}
+
+@media all and (max-width: 320px) {
+  .order-form__body_content_price {font-size: 1.8rem !important;}
+  .order-form__body_content_old_price {font-size: 1rem !important;}
+  .order-form__body_content_remark {font-size: .75rem;}
+  .order-form__body_content h1 {font-size: 1.6rem !important;}
+  .order-form__bottom_remark {font-size: 1.25rem !important;}
+  .order-form__body_fields_btn_text span.text-lowercase {font-size: .7rem !important;}
+  .order-form__body_fields form img {margin-right: .5rem;width: 3.5rem;}
+  .order-form__body_fields form button {font-size: 1.08rem !important;}
+  .order-form__body_fields_btn_text {margin-left: .5rem;}
+}
+
+@media all and (max-width: 250px) {
+  .order-form__body_content_price {font-size: 1.75rem !important;}
+  .order-form__body_content_old_price {font-size: .95rem !important;}
+  .order-form__body_content_remark {font-size: .7rem;}
+  .order-form__body_content h1 {font-size: 1.45rem !important;}
+  .order-form__bottom_remark {font-size: 1rem !important;}
+  .order-form__body_fields_btn_text span.text-lowercase {font-size: .7rem !important;}
+  .order-form__body_fields form img {margin-right: .5rem;width: 3.5rem;}
+  .order-form__body_fields form button {font-size: 1.08rem !important;}
+  .order-form__body_fields_btn_text {margin-left: .5rem;}
+}
+
