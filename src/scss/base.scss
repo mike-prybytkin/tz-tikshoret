@@ -21,3 +21,8 @@ button {
     text-decoration: underline;
   }
 }
+
+.fontawersome-ico {
+  @extend %transition;
+  color: $color-border;
+}
