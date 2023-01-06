@@ -25,7 +25,7 @@ const Navigation = () => {
     }
   } 
 
-  const close = () => {
+  const closeDropDownList = () => {
     setOpenDropDownList(false);
   }
   return (
@@ -103,7 +103,7 @@ const Navigation = () => {
           </li>
         </ul>
       </nav>
-      <div className="popular-news" onMouseOver={popularNewsListener} onMouseLeave={close}>
+      <div className="popular-news" onMouseOver={popularNewsListener} onMouseLeave={closeDropDownList}>
         {!openDropDownList ? (
           <div className="popular-news__de-hoy">
             <span className="popular-news__heading">TEMAS DE HOY:</span>

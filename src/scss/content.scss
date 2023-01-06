@@ -1,0 +1,112 @@
+.main-wrapper {
+  margin-top: 20px;
+  .articles-wrapper {
+    flex-grow: 1;
+    border-right: 1px solid $color-border;
+    padding-right: 20px;
+  }
+
+  .aside {
+    max-width: 300px;
+    p {
+      writing-mode:vertical-lr;
+      text-orientation:upright;
+      text-align: center;
+      font-size: 3rem;
+      margin-left: 40%;
+    }
+  }
+}
+
+.article {
+  .article__pre-title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    span {
+      &:first-of-type {
+        color: $color-button
+      }
+      &:last-of-type {
+        color: $color-text-additionary
+      }
+    }
+  }
+
+  .article__heading {
+    @include font-additionaly($size: 2.6rem, $weight: 600);
+  }
+
+  .article__info {
+    padding-top: 16px;
+    border: solid $color-border;
+    border-width: 1px 0;
+    color: $color-text-additionary;
+    .article__autor {
+      @extend %transition;
+      color: $color-article-info;
+      text-decoration: transparent; 
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .article__sponsore {
+    span {
+      color: $color-text-additionary;
+    }
+    img {
+      width: 145px;
+    }
+  }
+
+  .article__themes {
+    margin-top: 10px;
+    padding: 10px;
+    background: $color-bg-ad-header;
+    color: $color-text-additionary;
+    border-radius: 5px;
+    span {
+      display: inline-block;
+    }
+    a {
+      display: inline-block;
+      @extend %transition;
+      color: $color-article-info;
+      text-decoration: none;
+      margin: 0 5px;
+      &:hover {
+        color: $color-button;
+      }
+      &::after {
+        position: relative;
+        content: '/';
+        left: 5px;
+        color: $color-text-additionary;
+      }
+      &:last-of-type::after {
+        content: '';
+      }
+    }
+  }
+
+  .article__main-img {
+    padding-top: 10px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.interwiew {
+  padding-top: 20px;
+  .interwiew__person {
+    display: inline-block;
+    padding-right: 10px;
+    font-weight: 600;
+  }
+  
+  .interwiew__video {
+    width: 100%;
+  }
+}

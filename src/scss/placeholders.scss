@@ -1,9 +1,3 @@
 %transition {
   transition: all .3s ease-in-out;
 }
-
-%button-rectangular {
-  padding: 12px 28px;
-  border-radius: 8px;
-  @extend %transition;
-}

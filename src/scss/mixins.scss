@@ -5,6 +5,13 @@
   color: $color;
 }
 
+@mixin font-additionaly ($size: 1.6rem, $weight: 400, $color: $color-text-primary) {
+  font-family: 'Merriweather', 'Times New Roman', 'Times', serif;
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
+
 @mixin flex ($justify: center, $align: center, $flow: row wrap) {
   display: flex;
   justify-content: $justify;
