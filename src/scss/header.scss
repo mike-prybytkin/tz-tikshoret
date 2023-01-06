@@ -1,0 +1,86 @@
+.header {
+  
+  .header-ad {
+    padding: 10px 0;
+    background: $color-bg-ad-header;
+    border-bottom: 1px solid $color-border;
+    display: inline-block;
+    width: 100%;
+    position: sticky;
+
+    .header-ad__img {
+      height: 30px;
+      margin-right: 5px;
+    }
+
+    .header-ad__text {
+      font-size: 1.2em;
+      &_mark {
+        font-weight: 600;
+        display: inline-block;
+        background-color: $color-button;
+        color: $color-text-light;
+        padding: 2px 6px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.header-wrapper {
+  padding: 5px 5px 0 5px;
+  @include flex($justify: space-between, $align:flex-start);
+  border-bottom: solid 1px $color-button;
+  
+
+  .header-wrapper__links {
+    max-width: 200px;
+    @include flex($justify: flex-start);
+    gap: 10px;
+    margin-top: 10px;
+    button {
+      width: 16px;
+      margin-left: 10px;
+    }
+    .ico {
+      width: 16px;
+      display: inline-block;
+      padding-bottom: 4px;
+    }
+    .ico-search {
+      color: $color-text-primary;
+    }
+
+    .article-date {
+      margin: 12px 0 0;
+      font-size: .8em;
+      font-weight: 700;
+    }
+  }
+
+  .header-wrapper__logo {
+    margin-top: 19px;
+    img {
+      width: 300px;
+    }
+  }
+
+  .header-wrapper__buttons {
+    margin-top: 4px;
+    max-width: 270px;
+    text-align: right;
+
+    .button_bordered {
+      margin-right: 10px;
+    }
+
+    .button_colored {
+      margin-right: 10px;
+    }
+
+    .link {
+      font-weight: 700;
+      font-size: .8em;
+    }
+  }
+}

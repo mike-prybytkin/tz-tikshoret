@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+  @include font-primary($size: 16px);
+}
+
+button {
+  outline: none;
+  border: transparent;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.link {
+  @extend %transition;
+  text-decoration: none;
+  color: inherit;
+  text-decoration: transparent;
+
+  &:hover {
+    color: $color-button;
+    text-decoration: underline;
+  }
+}
