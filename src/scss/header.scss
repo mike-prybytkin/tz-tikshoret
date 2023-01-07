@@ -37,7 +37,7 @@
   
 
   .header-wrapper__links {
-    max-width: 200px;
+    width: 200px;
     @include flex($justify: flex-start);
     gap: 10px;
     margin-top: 10px;
@@ -65,12 +65,15 @@
     margin-top: 19px;
     img {
       width: 300px;
+      &:hover {
+        @extend %animation-opacity;
+      }
     }
   }
 
   .header-wrapper__buttons {
     margin-top: 4px;
-    max-width: 270px;
+    width: 270px;
     text-align: right;
 
     .button_bordered {

@@ -57,6 +57,9 @@
     }
     img {
       width: 145px;
+      &:hover {
+        @extend %animation-opacity;
+      }
     }
   }
 
@@ -94,6 +97,9 @@
     padding-top: 10px;
     img {
       width: 100%;
+      &:hover {
+        @extend %animation-opacity;
+      }
     }
   }
 }
