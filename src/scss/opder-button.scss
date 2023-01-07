@@ -1,0 +1,50 @@
+.order-button-wrapper {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.order-button {
+  position: relative;
+  padding: 10px 20px;
+  width: 250px;
+
+  .order-button__spinner {
+    display: none;
+    position: absolute;
+    font-size: 1rem;
+    left: 10px;
+    top: calc(50% - 0.5rem);
+    animation: spin 1.5s ease-in-out 0s infinite;
+    &.loading {
+      display: block;
+    }
+  }
+
+  .order-button__logo {
+    position: relative;
+    display: inline-block;
+    background-image: url('../../public/favicon.ico');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    top: 6px;
+  }
+  .order-button__text {
+    padding-left: 6px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+  }
+  .order-button__sale {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+  }
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+}

@@ -1,3 +1,5 @@
+import OrderButton from "./OrderButton";
+
 function Content() {
   return (
     <main>
@@ -84,6 +86,7 @@ function Content() {
               Sorry, your browser doesn't support embedded videos...
             </video>
           </article>
+          <OrderButton />
         </div>
 
         <aside className="aside">
