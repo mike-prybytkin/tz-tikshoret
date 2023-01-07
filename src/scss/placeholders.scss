@@ -1,0 +1,11 @@
+%transition {
+  transition: all .3s ease-in-out;
+}
+
+%animation360 {
+  animation: spin 1.5s ease-in-out 0s infinite;
+}
+
+%animation-opacity {
+  animation: opacity 1s linear;
+}

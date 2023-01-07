@@ -1,0 +1,22 @@
+.button {
+  @extend %transition;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  padding: 6px 12px;
+  width: auto;
+
+  &:hover {
+    background: $color-button-hover;
+    color: $color-text-light;
+  }
+}
+
+.button_bordered {
+  border: solid 1px $color-border;
+}
+
+.button_colored {
+  color: $color-text-light;
+  border: solid 1px $color-border;
+  background-color: $color-button;
+}

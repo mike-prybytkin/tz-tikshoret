@@ -1,0 +1,12 @@
+.wrapper {
+  max-width: $content-width;
+  margin: auto;
+}
+
+.layout-2-column {
+  @include columns($width: 48%);
+}
+
+.layout-3-column {
+  @include columns($width: 33.3333%);
+}
